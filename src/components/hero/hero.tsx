@@ -22,19 +22,19 @@ export function Hero() {
       <div className="pointer-events-none absolute inset-0 bg-hero-mesh" />
       <div
         className={
-          "gradient-blob -left-32 -top-32 h-80 w-80 bg-accent/25 " +
+          "gradient-blob -left-32 -top-32 h-96 w-96 bg-cream-300/40 " +
           "animate-float-slow"
         }
       />
       <div
         className={
-          "gradient-blob -right-24 top-1/3 h-56 w-56 bg-accent-muted " +
+          "gradient-blob -right-24 top-1/3 h-64 w-64 bg-cream-400/25 " +
           "animate-float-medium"
         }
       />
       <div
         className={
-          "gradient-blob bottom-1/4 left-1/3 h-40 w-40 bg-accent/15 " +
+          "gradient-blob bottom-1/4 left-1/3 h-48 w-48 bg-accent/10 " +
           "animate-float-fast"
         }
       />
@@ -80,10 +80,10 @@ export function Hero() {
               className={cn(
                 "inline-flex h-12 items-center justify-center gap-2 " +
                   "rounded-lg px-8 text-base font-medium transition-all " +
-                  "bg-accent text-white shadow-soft hover:bg-accent-dark " +
-                  "hover:shadow-glow-sm active:scale-[0.98] " +
+                  "bg-accent text-cream-50 shadow-soft hover:bg-accent-dark " +
+                  "hover:shadow-soft-lg active:scale-[0.98] " +
                   "focus-visible:outline-none focus-visible:ring-2 " +
-                  "focus-visible:ring-accent focus-visible:ring-offset-2"
+                  "focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-cream-50"
               )}
             >
               View Projects
@@ -93,10 +93,10 @@ export function Hero() {
               className={cn(
                 "inline-flex h-12 items-center justify-center gap-2 " +
                   "rounded-lg px-8 text-base font-medium transition-all " +
-                  "bg-cream-200 text-ink border border-cream-300 " +
-                  "hover:bg-cream-300 hover:border-accent-muted " +
+                  "bg-cream-50 text-ink border border-cream-300 " +
+                  "hover:bg-cream-200 hover:border-accent/30 " +
                   "focus-visible:outline-none focus-visible:ring-2 " +
-                  "focus-visible:ring-accent focus-visible:ring-offset-2"
+                  "focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-cream-50"
               )}
             >
               Email Me
@@ -113,7 +113,7 @@ export function Hero() {
           <div
             className={
               "relative rounded-full p-1 shadow-glow-ring " +
-              "ring-2 ring-accent/30 ring-offset-4 ring-offset-cream-50"
+              "ring-2 ring-accent/40 ring-offset-4 ring-offset-cream-50"
             }
           >
             <div

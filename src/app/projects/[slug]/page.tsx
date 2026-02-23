@@ -68,21 +68,43 @@ export default async function ProjectPage({
 
         <div
           className={
-            "relative aspect-video w-full overflow-hidden " +
-            "rounded-xl bg-cream-200 mb-16"
+            "relative aspect-video w-full overflow-hidden rounded-xl " +
+            "bg-cream-200 mb-16"
           }
         >
-          <Image
-            src={heroPath}
-            alt={`${project.title} homepage`}
-            fill
-            className="object-cover object-top"
-            sizes="(max-width: 768px) 100vw, 672px"
-            priority
-          />
+          {project.links[0] ? (
+            <a
+              href={project.links[0].url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={
+                "block relative h-full w-full overflow-hidden rounded-xl " +
+                "transition-all duration-300 ease-out " +
+                "hover:scale-[1.02] hover:shadow-soft-lg"
+              }
+            >
+              <Image
+                src={heroPath}
+                alt={`${project.title} homepage`}
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 768px) 100vw, 672px"
+                priority
+              />
+            </a>
+          ) : (
+            <Image
+              src={heroPath}
+              alt={`${project.title} homepage`}
+              fill
+              className="object-cover object-top"
+              sizes="(max-width: 768px) 100vw, 672px"
+              priority
+            />
+          )}
         </div>
 
-        <div className="prose prose-cream max-w-none space-y-16">
+        <div className="prose prose-zinc prose-a:text-accent prose-a:no-underline hover:prose-a:text-accent-dark max-w-none space-y-16">
           <section>
             <h2 className="font-display text-2xl font-semibold text-ink">
               Overview

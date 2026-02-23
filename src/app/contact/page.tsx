@@ -61,14 +61,14 @@ export default function ContactPage() {
                 rel={link.label !== "Email" ? "noopener noreferrer" : undefined}
                 className={
                   "flex items-start gap-4 rounded-xl border border-cream-200 " +
-                  "bg-white/70 backdrop-blur-sm p-6 transition-all duration-300 " +
-                  "hover:border-accent/40 hover:shadow-soft-lg focus-ring"
+                  "bg-white p-6 transition-all duration-300 shadow-soft " +
+                  "hover:border-cream-300 hover:shadow-soft-lg focus-ring"
                 }
               >
                 <div
                   className={
                     "flex h-12 w-12 shrink-0 items-center justify-center " +
-                    "rounded-lg bg-accent/10 text-accent"
+                    "rounded-lg bg-cream-200 text-accent"
                   }
                 >
                   <link.icon className="h-6 w-6" />

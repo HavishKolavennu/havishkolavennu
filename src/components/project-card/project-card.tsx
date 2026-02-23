@@ -34,8 +34,8 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
       <Card
         className={
           "overflow-hidden transition-all duration-300 group " +
-          "hover:shadow-glow-sm hover:-translate-y-1 hover:border-accent/40 " +
-          "border-cream-300"
+          "hover:shadow-soft-lg hover:-translate-y-0.5 hover:border-cream-300 " +
+          "border-cream-200"
         }
       >
         <Link href={`/projects/${project.slug}`} className="block">

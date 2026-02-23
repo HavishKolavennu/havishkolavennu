@@ -51,9 +51,9 @@ export function Skills() {
                   <span
                     key={skill}
                     className={
-                      "rounded-lg border border-cream-300 bg-white/60 " +
+                      "rounded-lg border border-cream-200 bg-cream-100 " +
                       "px-3 py-1.5 text-sm font-medium text-ink " +
-                      "transition-colors hover:border-accent/40 hover:bg-accent-muted/30"
+                      "transition-colors hover:border-cream-300 hover:bg-cream-200"
                     }
                   >
                     {skill}

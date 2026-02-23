@@ -65,38 +65,42 @@ export const PROJECTS: Project[] = [
   {
     slug: "startupos",
     title: "StartupOS",
-    tagline: "Operating system for early-stage founders",
+    tagline: "Organize finances, subscriptions, and events in one portal",
     description:
-      "A founder dashboard that consolidates metrics, tasks, and investor " +
-      "updates in one place. Built for Startup Shell.",
+      "A user-friendly portal for startups to track subscriptions, " +
+      "finances, and events—with an AI chatbot for profit optimization.",
     role: "Solo founder & engineer",
-    stack: ["Next.js", "Convex", "Tailwind", "Vercel"],
+    stack: ["Next.js", "Convex", "Tailwind", "Clerk"],
     links: [
       { label: "Live demo", url: "https://startupos-opal.vercel.app" },
     ],
     featured: true,
     overview:
-      "StartupOS is a lightweight operating system for early-stage founders. " +
-      "It centralizes key metrics, weekly tasks, and investor update drafts " +
-      "so founders spend less time context-switching and more time building.",
+      "StartupOS is a founder control center that turns financial and business operations chaos into clarity. " + 
+      "It consolidates subscriptions, revenue, expenses, and runway forecasting into " + 
+      "one unified dashboard, giving startups and local businesses real-time visibility " +
+      "into their financial health. With live scenario simulation and automated insights," + 
+      " StartupOS helps teams understand not just where their money is going, " + 
+      "but what decisions will shape their future and how to they can optimize their business for maximum profit.",
     problem:
-      "Founders juggle spreadsheets, Notion, and email. There's no single " +
-      "place to track metrics, plan weekly priorities, and draft investor " +
-      "updates. Context-switching kills focus.",
+      "Startups and small businesses juggle multiple subscriptions (SMS, " +
+      "databases, domains), softwares, and business operations that are " + 
+      "difficult to keep track of. There was no single place to see everything at a glance.",
     solution:
-      "A focused dashboard with real-time metrics, task boards, and " +
-      "templated investor update drafts. Clean UI, fast load times, " +
-      "and offline-capable architecture.",
+      "A unified business operations portal that combines financial analytics, subscription tracking, and operational metrics into a single dashboard. " +
+  "Interactive data visualizations transform raw input into actionable insights, supported by a clean UI, secure authentication, " +
+  "and an upcoming AI assistant for strategic business recommendations.",
     hasDemo: true,
     keyDecisions: [
       "Convex for real-time sync and serverless backend",
       "Next.js App Router for fast navigation and SEO",
-      "Minimal feature set to ship fast and validate",
+      "Data visualizations for financial clarity",
     ],
     results: [
-      "Shipped MVP in 2 weeks",
-      "Validated with 5 founder interviews",
-      "Ready for Startup Shell demo",
+      "Won Most Ambitious award at the Buildathon",
+      "Learned to transform user input into financial graphs and visualizations",
+      "Overcame Google auth and secure authentication challenges and " +
+        "deepened API and backend knowledge",
     ],
   },
   {
@@ -104,33 +108,40 @@ export const PROJECTS: Project[] = [
     title: "ND Cutz",
     tagline: "Barbershop booking and management",
     description:
-      "Full-stack booking platform for a local barbershop with scheduling, " +
-      "payments, and admin dashboard.",
+      "Booking and management platform for a local barbershop. Customers " +
+      "view availability, book or request times; staff manage schedules, " +
+      "gallery, and reviews via admin dashboard.",
     role: "Full-stack developer",
-    stack: ["Next.js", "Stripe", "PostgreSQL", "Prisma"],
+    stack: ["Node.js", "PostgreSQL", "HTML/CSS/JavaScript", "Twilio (SMS)"],
     links: [
       { label: "Visit site", url: "https://ndcutz.com" },
     ],
     featured: true,
     overview:
       "ND Cutz is a booking and management platform for a local barbershop. " +
-      "Customers can book appointments, and staff manage schedules and " +
-      "payments through an admin dashboard.",
+      "Customers can view availability, book appointments, and request custom times. " +
+      "Staff manage the schedule, approve or decline bookings, and handle gallery " +
+      "and reviews through an admin dashboard.",
     problem:
-      "The barbershop relied on phone calls and walk-ins. No way to see " +
-      "availability or pre-pay. Staff spent time on manual scheduling.",
+      "The barbershop relied on phone calls and walk-ins with no way to see " +
+      "availability online. Staff spent time on manual scheduling, and customers " +
+      "had limited visibility into open slots.",
     solution:
-      "A modern web app with real-time availability, Stripe payments, " +
-      "and an admin dashboard for staff to manage appointments and revenue.",
+      "A web app that shows real-time availability, lets customers book or request " +
+      "times, and uses SMS for notifications and confirmations. An admin dashboard " +
+      "lets staff manage slots, approve or decline bookings, upload gallery images, " +
+      "and moderate reviews. ",
     keyDecisions: [
-      "Stripe for payments and subscription tiers",
-      "Prisma + PostgreSQL for relational data",
-      "Responsive design for mobile-first booking",
+      "PostgreSQL (Supabase) for bookings, slots, reviews, gallery, and sessions",
+      "Twilio for booking alerts and confirmations, plus CONFIRM/DECLINE by text",
+      "Vercel for hosting",
+      "Responsive, mobile-friendly UI",
     ],
     results: [
-      "Reduced no-shows with automated reminders",
-      "Increased pre-bookings by 40%",
-      "Staff adoption within 2 weeks",
+      "Online booking reduced manual scheduling for staff",
+      "SMS confirmations with address and payment info",
+      "Admin can manage everything in one place",
+      "Session-based admin auth and env-based credentials",
     ],
   },
   {
@@ -168,36 +179,37 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: "paw-services",
-    title: "Paw Services",
-    tagline: "Pet care scheduling platform",
+    title: "P.A.W Services",
+    tagline: "Moving, junk removal, and storage solutions",
+    featured: true,
     description:
-      "Platform for pet owners to book grooming, walking, and vet visits " +
-      "with local providers.",
+      "Website for a local team offering moving services, junk removal, " +
+      "and storage solutions.",
     role: "Full-stack developer",
-    stack: ["Next.js", "Node.js", "MongoDB", "Stripe"],
+    stack: ["Next.js", "Node.js"],
     links: [
       { label: "Visit site", url: "https://pawservices.org" },
     ],
-    featured: false,
     overview:
-      "Paw Services connects pet owners with local groomers, walkers, " +
-      "and vet clinics. Users browse providers, compare prices, and book " +
-      "appointments with integrated payments.",
+      "P.A.W Services is a website for a local team that offers moving services, " +
+      "junk removal, and storage solutions. Customers browse services, request " +
+      "quotes, and book appointments.",
     problem:
-      "Pet owners juggle multiple apps and phone calls to schedule " +
-      "different services. Providers lacked a unified booking system.",
+      "The team had no online presence—customers relied on word of mouth or " +
+      "couldn't easily find information about services, pricing, or how to book.",
     solution:
-      "A marketplace-style platform with provider profiles, availability " +
-      "calendars, and Stripe checkout. Providers get a simple dashboard.",
+      "A website that showcases the team's moving, junk removal, and storage " +
+      "services. Customers can learn about offerings, request quotes, and " +
+      "book appointments online.",
     keyDecisions: [
-      "MongoDB for flexible provider schema",
-      "Stripe Connect for provider payouts",
-      "Geolocation for nearby provider search",
+      "Clear service pages for moving, junk removal, and storage",
+      "Quote request flow for custom estimates",
+      "Responsive, mobile-friendly layout for on-the-go inquiries",
     ],
     results: [
-      "MVP launched in hackathon",
-      "50+ test users during demo",
-      "Positive feedback on UX flow",
+      "Online presence for the team to reach more customers",
+      "Quote requests and bookings handled through the website",
+      "Single place for customers to learn about all three service offerings",
     ],
   },
 ];

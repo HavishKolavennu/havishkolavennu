@@ -35,9 +35,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${sora.variable} ${outfit.variable}`}>
-      <body className="min-h-screen font-sans">
+      <body
+        className="min-h-screen font-sans bg-cream-50 text-ink"
+        style={{ backgroundColor: "#e5dfd5", color: "#1a1714" }}
+      >
         <Navbar />
-        <main className="relative">{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

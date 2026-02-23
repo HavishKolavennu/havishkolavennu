@@ -39,11 +39,11 @@ export function FeaturedWork() {
           <Link
             href="/projects"
             className={cn(
-              "inline-flex h-9 items-center gap-2 rounded-lg border-2 " +
-                "border-accent px-4 text-sm font-medium text-accent " +
-                "bg-transparent hover:bg-accent-muted/30 " +
+              "inline-flex h-9 items-center gap-2 rounded-lg border " +
+                "border-cream-300 px-4 text-sm font-medium text-ink " +
+                "bg-transparent hover:bg-cream-200 hover:border-accent/30 " +
                 "focus-visible:outline-none focus-visible:ring-2 " +
-                "focus-visible:ring-accent focus-visible:ring-offset-2 md:mb-1"
+                "focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-cream-50 md:mb-1"
             )}
           >
             View all

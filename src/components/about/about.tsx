@@ -24,7 +24,7 @@ export function About() {
             <div
               className={
                 "relative h-48 w-48 shrink-0 overflow-hidden " +
-                "rounded-full ring-2 ring-accent/25 ring-offset-4 " +
+                "rounded-full ring-2 ring-cream-300 ring-offset-4 " +
                 "ring-offset-cream-50 shadow-soft-lg"
               }
             >

@@ -47,10 +47,10 @@ export function CTA() {
             href={`mailto:${SITE_CONFIG.email}`}
             className={cn(
               "inline-flex h-12 items-center justify-center gap-2 rounded-lg " +
-                "px-8 text-base font-medium bg-accent text-white shadow-soft " +
-                "hover:bg-accent-dark hover:shadow-glow-sm " +
+                "px-8 text-base font-medium bg-accent text-cream-50 shadow-soft " +
+                "hover:bg-accent-dark hover:shadow-soft-lg " +
                 "focus-visible:outline-none focus-visible:ring-2 " +
-                "focus-visible:ring-accent focus-visible:ring-offset-2"
+                "focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-cream-50"
             )}
           >
             <Mail className="h-5 w-5" />
@@ -62,10 +62,10 @@ export function CTA() {
             rel="noopener noreferrer"
             className={cn(
               "inline-flex h-12 items-center justify-center gap-2 rounded-lg " +
-                "border-2 border-accent px-8 text-base font-medium text-accent " +
-                "bg-transparent hover:bg-accent-muted/30 " +
+                "border border-cream-300 px-8 text-base font-medium text-ink " +
+                "bg-transparent hover:bg-cream-200 hover:border-accent/30 " +
                 "focus-visible:outline-none focus-visible:ring-2 " +
-                "focus-visible:ring-accent focus-visible:ring-offset-2"
+                "focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-cream-50"
             )}
           >
             <Github className="h-5 w-5" />
@@ -77,10 +77,10 @@ export function CTA() {
             rel="noopener noreferrer"
             className={cn(
               "inline-flex h-12 items-center justify-center gap-2 rounded-lg " +
-                "border-2 border-accent px-8 text-base font-medium text-accent " +
-                "bg-transparent hover:bg-accent-muted/30 " +
+                "border border-cream-300 px-8 text-base font-medium text-ink " +
+                "bg-transparent hover:bg-cream-200 hover:border-accent/30 " +
                 "focus-visible:outline-none focus-visible:ring-2 " +
-                "focus-visible:ring-accent focus-visible:ring-offset-2"
+                "focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-cream-50"
             )}
           >
             <Linkedin className="h-5 w-5" />

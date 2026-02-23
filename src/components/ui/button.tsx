@@ -13,14 +13,14 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-accent text-white shadow-soft hover:bg-accent-dark " +
-          "hover:shadow-glow-sm active:scale-[0.98]",
+          "bg-accent text-cream-50 shadow-soft hover:bg-accent-dark " +
+          "hover:shadow-soft-lg active:scale-[0.98]",
         secondary:
           "bg-cream-200 text-ink border border-cream-300 " +
-          "hover:bg-cream-300 hover:border-accent-muted",
+          "hover:bg-cream-300 hover:border-cream-400",
         outline:
-          "border-2 border-accent text-accent bg-transparent " +
-          "hover:bg-accent-muted/30",
+          "border border-cream-300 text-ink bg-transparent " +
+          "hover:bg-cream-200 hover:border-accent/30",
         ghost: "hover:bg-cream-200 text-ink",
         link: "text-accent underline-offset-4 hover:underline",
       },

@@ -18,7 +18,7 @@ export function Navbar() {
     <header
       className={
         "sticky top-0 z-50 w-full border-b border-cream-200 " +
-        "bg-cream-50/90 backdrop-blur-xl"
+        "bg-cream-50/98 backdrop-blur-xl"
       }
     >
       <nav

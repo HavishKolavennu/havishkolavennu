@@ -3,31 +3,29 @@ import type { Config } from "tailwindcss";
 const config: Config = {
   darkMode: ["class"],
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
         cream: {
-          50: "#fefdfb",
-          100: "#faf7f2",
-          200: "#f3ebe0",
-          300: "#e8dcc8",
-          400: "#d4c4a8",
+          50: "#e5dfd5",
+          100: "#ddd4c8",
+          200: "#d0c4b4",
+          300: "#c4b4a0",
+          400: "#a89478",
         },
         ink: {
           DEFAULT: "#1a1714",
-          muted: "#5c5348",
-          light: "#78716c",
+          muted: "#5c5044",
+          light: "#7a6e62",
         },
         accent: {
-          DEFAULT: "#c94c3a",
-          light: "#e06b5a",
-          dark: "#a63d2e",
-          muted: "#f0d4cf",
-          glow: "#c94c3a",
+          DEFAULT: "#CD6A2F",
+          light: "#e08050",
+          dark: "#b85a25",
+          muted: "#f5ebe5",
+          glow: "#CD6A2F",
         },
       },
       fontFamily: {
@@ -35,12 +33,12 @@ const config: Config = {
         display: ["var(--font-outfit)", "system-ui", "sans-serif"],
       },
       boxShadow: {
-        soft: "0 4px 24px -4px rgba(26, 23, 20, 0.08)",
-        "soft-lg": "0 12px 40px -12px rgba(26, 23, 20, 0.12)",
-        glow: "0 0 60px -12px rgba(201, 76, 58, 0.45)",
-        "glow-sm": "0 0 32px -8px rgba(201, 76, 58, 0.3)",
+        soft: "0 2px 16px -4px rgba(26, 23, 20, 0.06)",
+        "soft-lg": "0 8px 32px -12px rgba(26, 23, 20, 0.08)",
+        glow: "0 0 40px -8px rgba(205, 106, 47, 0.2)",
+        "glow-sm": "0 0 24px -4px rgba(205, 106, 47, 0.15)",
         "glow-ring":
-          "0 0 0 1px rgba(201, 76, 58, 0.2), 0 0 24px -4px rgba(201, 76, 58, 0.25)",
+          "0 0 0 1px rgba(205, 106, 47, 0.25), 0 2px 12px -2px rgba(26, 23, 20, 0.06)",
       },
       animation: {
         "float-slow": "float 8s ease-in-out infinite",
@@ -56,7 +54,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
 
 export default config;
