@@ -18,7 +18,7 @@ export default async function ProjectPage({
 
   if (!project) notFound();
 
-  const heroPath = `/projects/${project.slug}/hero.png`;
+  const heroPath = `/projects/${project.slug}/hero.png?v=2`;
 
   return (
     <article className="px-6 py-20 md:py-28">

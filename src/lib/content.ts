@@ -11,7 +11,7 @@ export const SITE_CONFIG = {
 } as const;
 
 export const BUILDER_STATS = [
-  { label: "Projects shipped", value: 4 },
+  { label: "Projects shipped", value: 5 },
   { label: "Hackathons", value: 3 },
   { label: "Languages", value: 6 },
   { label: "Years building", value: 2 },
@@ -62,6 +62,52 @@ export interface Project {
 }
 
 export const PROJECTS: Project[] = [
+  {
+    slug: "structiq",
+    title: "StructIQ",
+    tagline: "Progress intelligence for structural construction",
+    description:
+      "Construction project management that connects weekly schedules with " +
+      "interactive 3D BIM models. Track tasks, work packages, and element status " +
+      "in real time with visual progress mapping.",
+    role: "Full-stack developer",
+    stack: ["React", "Vite", "Three.js", "Tailwind", "Python", "FastAPI"],
+    links: [
+      { label: "Live demo", url: "https://structiq-2.vercel.app" },
+      { label: "GitHub", url: "https://github.com/havishkolavennu/structiq-2" },
+    ],
+    featured: true,
+    hasDemo: true,
+    overview:
+      "StructIQ is a progress intelligence platform for structural construction projects. " +
+      "It integrates project schedules with interactive 3D Building Information Models (BIM), " +
+      "allowing teams to track work packages, verify layouts against design, and visualize " +
+      "element status—from material delivery to installation—in one unified dashboard. " +
+      "Users can filter by floor and bay, inspect individual structural elements by clicking " +
+      "on the 3D model, and see real-time progress (e.g., 4 of 32 elements complete) with " +
+      "status tags like On Site, In Progress, and Not Started.",
+    problem:
+      "Construction teams struggle to connect schedule data with physical progress on site. " +
+      "BIM models and Gantt charts live in separate tools, making it hard to see which " +
+      "elements are delivered, in progress, or complete at a glance.",
+    solution:
+      "A unified dashboard that pairs a weekly schedule with an interactive 3D reference model. " +
+      "Tasks are linked to structural elements; clicking an element in the model reveals its " +
+      "status and associated work. Layout verification references the BIM model directly, " +
+      "and contractors are tagged per task for clear accountability.",
+    keyDecisions: [
+      "React Three Fiber (Three.js) for performant 3D visualization in the browser",
+      "Work packages and elements mapped to BIM geometry for click-to-inspect",
+      "Status-driven color coding (e.g., yellow for in-progress beams) for quick scanning",
+      "Filter by floor and bay for focused progress tracking",
+    ],
+    results: [
+      "Single view for schedule + 3D model reduces context switching",
+      "Visual progress mapping helps identify bottlenecks and delays",
+      "BIM-integrated layout verification improves accuracy on site",
+      "Real-time status updates support better coordination across contractors",
+    ],
+  },
   {
     slug: "startupos",
     title: "StartupOS",
