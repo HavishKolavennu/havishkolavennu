@@ -1,6 +1,6 @@
 # Havish Kolavennu — Portfolio
 
-A production-quality personal portfolio for a CS student applying to Startup Shell. Built with Next.js (App Router), TypeScript, Tailwind CSS, Framer Motion, and shadcn-style components.
+My personal portfolio as a CS student at the University of Maryland, College park. Built with Next.js (App Router), TypeScript, Tailwind CSS, Framer Motion, and shadcn-style components.
 
 ## Design
 
