@@ -150,6 +150,46 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
+    slug: "sidion-technologies",
+    title: "Sidion Technologies",
+    tagline: "Precision-built digital systems",
+    description:
+      "Web design business that designs and deploys full-stack React/Node.js " +
+      "websites with Firebase/SQL backends, analytics dashboards, and scalable cloud hosting.",
+    role: "Founder & President",
+    stack: ["React", "Node.js", "Firebase", "SQL", "Git"],
+    links: [
+      { label: "Visit site", url: "https://sidiontechnologies.com" },
+    ],
+    featured: true,
+    overview:
+      "Sidion Technologies is a web design business based in Princeton, NJ, " +
+      "founded in March 2023. We design and deploy full-stack websites with " +
+      "React/Node.js, Firebase and SQL backends, and scalable UI architectures. " +
+      "Services include analytics dashboards, secure authentication, third-party " +
+      "API integration, and cloud hosting.",
+    problem:
+      "Clients needed modern, scalable web solutions with reliable backends, " +
+      "clear visibility into user activity, and production-ready deployments.",
+    solution:
+      "Full-stack React/Node.js development with Firebase and SQL backends, " +
+      "analytics dashboards for traffic and engagement insights, secure auth " +
+      "and API integrations, and Git-based workflows with automated testing " +
+      "for reliable releases.",
+    keyDecisions: [
+      "React/Node.js stack for full-stack consistency and scalability",
+      "Firebase and SQL backends tailored to client needs",
+      "Analytics dashboards to help clients identify high-impact product changes",
+      "Git workflows, pull requests, and automated testing for production reliability",
+    ],
+    results: [
+      "Designed and deployed 25+ full-stack websites since founding",
+      "Analytics dashboards helped clients improve engagement and identify product changes",
+      "Secure auth, APIs, and cloud hosting across client deployments",
+      "Managed Git workflows and automated testing for reliable production releases",
+    ],
+  },
+  {
     slug: "ndcutz",
     title: "ND Cutz",
     tagline: "Barbershop booking and management",
